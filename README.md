@@ -22,3 +22,5 @@ To pull out the immunogenic epitopes from each genome, we used a custom script t
 - Pulling csp22s from cold shock protein: _pull_csp22s.py_
   
 I manually curated the results from these scripts because not EVERY sequence of csp22 or elf18 were able to be retrieved automatically. These two scripts also generate two tables: one of csp22 epitopes grouped by taxonomic class, and one of unique epitopes with counts to later sort out epitopes by abundance in dataset. 
+
+Lastly, since I wanted to pull all the MAMP copy number data together, I used a script to pool genome files, protein files, and copy number counts together: _copy_number_metadata_convert.py_. This was mostly to plot the data on R. 
