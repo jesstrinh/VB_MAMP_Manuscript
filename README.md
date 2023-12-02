@@ -1,5 +1,5 @@
 # VB_MAMP_Manuscript
-These scripts were used in my manuscript, "The perception and evolution of csp22 and elf18 from vector-borne bacterial plant pathogens".  I only uploaded custom Python scripts that I used here, but see the README for a general description of the pipeline. 
+These scripts were used in my manuscript, _The perception and evolution of csp22 and elf18 from vector-borne bacterial plant pathogens_.  I only uploaded custom Python scripts that I used here, but see the README for a general description of the pipeline. 
 
 
 The overall goal was to pull MAMP homologs from various genome assemblies (binned by vector-borne and non-vector-borne bacterial species). After that, I applied a custom script to pull out the particular immunogenic epitope from those homologs (example: csp22 from bacterial cold shock protein) and count up a) how many MAMP copies were in each genome and b) categorize them by taxonomic class. A brief summary of the pipeline is below. 
