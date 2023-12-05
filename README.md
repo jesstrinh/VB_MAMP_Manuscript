@@ -24,3 +24,5 @@ To pull out the immunogenic epitopes from each genome, we used a custom script t
 I manually curated the results from these scripts because not EVERY sequence of csp22 or elf18 were able to be retrieved automatically. These two scripts also generate two tables: one of csp22 epitopes grouped by taxonomic class, and one of unique epitopes with counts to later sort out epitopes by abundance in dataset. 
 
 Lastly, since I wanted to pull all the MAMP copy number data together, I used a script to pool genome files, protein files, and copy number counts together: [_copy_number_metadata_convert.py_](copy_number_metadata_convert.py). This was mostly to plot the data on R. 
+
+For Figure 7A, I generated a phylogenetic tree using only Csp domains. I included code to retrieve domains from the loci in the output HMMER file by using [_csp_domain_pull.py_](csp_domain_pull.py).
