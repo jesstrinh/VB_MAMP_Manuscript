@@ -15,6 +15,7 @@ from Bio import SeqIO
 # in separate folders based on bacterial family 
 
 input_file = "results/hmmer/cold_shock_prot/domain_extraction/csp_prot_domain_loci.txt"
+input_directory = "proteins/*/*/*protein.faa"
 
 domains = [] 
 
@@ -32,7 +33,7 @@ output_metadata = "results/hmmer/cold_shock_prot/domain_extraction/WP_metadata.t
 # record the strain as designated in the proper directory 
 # and grab the corresponding domain 
 
-for filename in glob.glob("proteins/*/*/*protein.faa"):
+for filename in glob.glob(input_directory):
   filename_without_extension, extension = os.path.splitext(filename)
   with open(filename) as protein_fasta:
     for record in SeqIO.parse(protein_fasta, "fasta"):
